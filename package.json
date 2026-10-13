@@ -1,0 +1,53 @@
+{
+  "name": "simple-kanban",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A deliberately boring kanban board: Next.js + SQLite. Boards, lists, cards, descriptions, comments, uploads.",
+  "license": "MIT",
+  "author": "Alberto Roura <mail@albertoroura.com> (https://albertoroura.com)",
+  "homepage": "https://github.com/rouralberto/simple-kanban",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rouralberto/simple-kanban.git"
+  },
+  "keywords": [
+    "kanban",
+    "wekan",
+    "wekan-alternative",
+    "nextjs",
+    "sqlite",
+    "self-hosted",
+    "trello-alternative"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "create-user": "node scripts/create-user.mjs",
+    "import:wekan": "node scripts/import-wekan.mjs",
+    "test:smoke": "node scripts/smoke-test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.0.3",
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "server-only": "^0.0.1"
+  },
+  "optionalDependencies": {
+    "mongodb": "^7.7.0"
+  },
+  "allowScripts": {
+    "better-sqlite3": false
+  },
+  "devDependencies": {
+    "playwright-core": "^1.64.0"
+  }
+}

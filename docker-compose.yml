@@ -1,0 +1,11 @@
+services:
+  simple-kanban:
+    image: roura/simple-kanban:latest
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/data
+    environment:
+      # Set to "true" when served over HTTPS (behind a TLS-terminating proxy).
+      COOKIE_SECURE: "false"
