@@ -48,7 +48,7 @@ curl -O https://raw.githubusercontent.com/rouralberto/simple-kanban/master/docke
 docker compose up -d
 ```
 
-Images are published for `linux/amd64` and `linux/arm64`.
+Images are published for `linux/amd64` and `linux/arm64`. The [Docker Hub overview](https://hub.docker.com/r/roura/simple-kanban) is edited in [`docs/DOCKERHUB.md`](docs/DOCKERHUB.md).
 
 ### Configuration
 
